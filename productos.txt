@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Escuadra",
+    "price": 223.5,
+    "thumbnail": "via.placeholder.com/150",
+    "id": 1
+  },
+  {
+    "title": "Compas",
+    "price": 256.7,
+    "thumbnail": "via.placeholder.com/150",
+    "id": 2
+  },
+  {
+    "title": "Regla",
+    "price": 198.4,
+    "thumbnail": "via.placeholder.com/150",
+    "id": 8
+  },
+  {
+    "title": "Lapiz Negro",
+    "price": 120.32,
+    "thumbnail": "via.placeholder.com/150",
+    "id": 4
+  },
+  {
+    "title": "Birome Azul",
+    "price": 150.45,
+    "thumbnail": "via.placeholder.com/150",
+    "id": 5
+  },
+  {
+    "title": "escarabajo",
+    "price": 223.5,
+    "thumbnail": "via.placeholder.com/150",
+    "id": 9
+  },
+  {
+    "title": "casa canalla",
+    "price": 223.5,
+    "thumbnail": "via.placeholder.com/150",
+    "id": 10
+  }
+]

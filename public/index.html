@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- boostrap -->
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid mt-5">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-4">
+          <form action="/mascotas/guardar" method="POST">
+            <h2>Mascotas</h2>
+            <label for="nombreMascota" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="nombreMascota" placeholder="Nombre de la Mascota" name="nombre"/>
+
+            <label for="razaMascota" class="form-label">Raza:</label>
+            <input type="text" class="form-control" id="razaMascota" placeholder="Raza de la Mascota" name="raza"/>
+
+            <label for="edadMascota" class="form-label">Edad:</label>
+            <input type="text" class="form-control" id="edadMascota" placeholder="Edad de la Mascota" name="edad"/>
+            <button  class="btn btn-primary mt-3">Enviar</button>
+          </form>
+        </div>
+        <div class="col-md-4">
+            <form action="/personas/guardar" method="POST">
+            <h2>Personas</h2>
+            <label for="nombrePersona" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="nombreMascota" placeholder="Nombre" name="nombre"/>
+
+            <label for="razaPersona" class="form-label">Apellido:</label>
+            <input type="text" class="form-control" id="razaMascota" placeholder="Apellido" name="apellido"/>
+
+            <label for="edadPersona" class="form-label">Edad:</label>
+            <input type="text" class="form-control" id="edadMascota" placeholder="Edad" name="edad" />
+            <button  class="btn btn-primary mt-3">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
