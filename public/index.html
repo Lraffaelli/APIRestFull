@@ -18,33 +18,19 @@
     <div class="container-fluid mt-5">
       <div class="row d-flex justify-content-center">
         <div class="col-md-4">
-          <form action="/mascotas/guardar" method="POST">
-            <h2>Mascotas</h2>
-            <label for="nombreMascota" class="form-label">Nombre:</label>
-            <input type="text" class="form-control" id="nombreMascota" placeholder="Nombre de la Mascota" name="nombre"/>
+          <form action="/api/productos" method="POST">
+            <h2>Agregar Producto</h2>
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Nombre del producto" name="title"/>
 
-            <label for="razaMascota" class="form-label">Raza:</label>
-            <input type="text" class="form-control" id="razaMascota" placeholder="Raza de la Mascota" name="raza"/>
+            <label for="precio" class="form-label">precio:</label>
+            <input type="text" class="form-control" id="precio" placeholder="precio del producto" name="price"/>
 
-            <label for="edadMascota" class="form-label">Edad:</label>
-            <input type="text" class="form-control" id="edadMascota" placeholder="Edad de la Mascota" name="edad"/>
+            <label for="thumbnail" class="form-label">Imagen:</label>
+            <input type="text" class="form-control" id="thumbnail" placeholder="Imagen del producto" name="thumbnail"/>
             <button  class="btn btn-primary mt-3">Enviar</button>
           </form>
-        </div>
-        <div class="col-md-4">
-            <form action="/personas/guardar" method="POST">
-            <h2>Personas</h2>
-            <label for="nombrePersona" class="form-label">Nombre:</label>
-            <input type="text" class="form-control" id="nombreMascota" placeholder="Nombre" name="nombre"/>
-
-            <label for="razaPersona" class="form-label">Apellido:</label>
-            <input type="text" class="form-control" id="razaMascota" placeholder="Apellido" name="apellido"/>
-
-            <label for="edadPersona" class="form-label">Edad:</label>
-            <input type="text" class="form-control" id="edadMascota" placeholder="Edad" name="edad" />
-            <button  class="btn btn-primary mt-3">Enviar</button>
-          </form>
-        </div>
+        </div>        
       </div>
     </div>
   </body>

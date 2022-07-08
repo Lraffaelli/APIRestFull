@@ -1,31 +1,13 @@
 [
   {
-    "title": "Escuadra",
-    "price": 223.5,
-    "thumbnail": "via.placeholder.com/150",
-    "id": 1
-  },
-  {
-    "title": "Compas",
-    "price": 256.7,
-    "thumbnail": "via.placeholder.com/150",
-    "id": 2
-  },
-  {
-    "title": "Regla",
-    "price": 198.4,
-    "thumbnail": "via.placeholder.com/150",
-    "id": 8
-  },
-  {
     "title": "Lapiz Negro",
     "price": 120.32,
     "thumbnail": "via.placeholder.com/150",
     "id": 4
   },
   {
-    "title": "Birome Azul",
-    "price": 150.45,
+    "title": "remplazado con id",
+    "price": 223.5,
     "thumbnail": "via.placeholder.com/150",
     "id": 5
   },
@@ -39,6 +21,24 @@
     "title": "casa canalla",
     "price": 223.5,
     "thumbnail": "via.placeholder.com/150",
-    "id": 10
+    "id": 13
+  },
+  {
+    "title": "casa naranja",
+    "price": 223.5,
+    "thumbnail": "via.placeholder.com/150",
+    "id": 16
+  },
+  {
+    "title": "escalera",
+    "price": "346",
+    "thumbnail": "escalera.jpg",
+    "id": 17
+  },
+  {
+    "title": "Este es el segundo que remplazo",
+    "price": 223.5,
+    "thumbnail": "via.placeholder.com/150",
+    "id": 18
   }
 ]

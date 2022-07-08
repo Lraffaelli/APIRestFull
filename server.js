@@ -6,28 +6,44 @@ const contenedor = new Contenedor("productos.txt");
 
 const routerApi = Router();
 
-app.use("/api", routerApi);
+app.use("/api/productos", routerApi);
 routerApi.use(express.json());
+routerApi.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 /* ----------------------------------------------------- */
-const productos=[]
-routerApi.get("/productos", async (req,res) =>{
+
+routerApi.get("/", async (req,res) =>{
     let listar = await contenedor.getAll();
     res.send(listar)
 })
 
-routerApi.get('/productos/:id', async (req,res) =>{
+routerApi.get('/:id', async (req,res) =>{
     let id = Number(req.params.id)
     let item = await contenedor.getById(id);
     console.log(item)
     res.send(item)
 })
-routerApi.post("/productos", async (req, res) => {
+routerApi.post("/", async (req, res) => {
     let item = req.body
-    let productos = await contenedor.addItem(item)
-    res.json(productos);
+     await contenedor.addItem(item)
+    res.json(item);
   });
+
+routerApi.put("/:id", async (req, res)=>{
+    let id = Number(req.params.id)
+    let newItem = req.body
+    
+    let replace = await contenedor.putItem(id,newItem)
+    res.send(replace)
+})
+
+  routerApi.delete('/:id', async (req,res) =>{
+    let id = Number(req.params.id)
+     await contenedor.deleteById(id);
+    console.log(`Producto con id ${id} ELIMINADO`)
+    res.send(`Producto con id ${id} fue ELIMINADO EXITOSAMENTE`)
+})
 
 
 
